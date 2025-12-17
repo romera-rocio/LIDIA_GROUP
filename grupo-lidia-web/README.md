@@ -1,179 +1,88 @@
+# Grupo Lidia Web
 
-# 🚀 Grupo Lidia - Landing Page
+Una landing page moderna para Grupo Lidia, construida con React, Vite y Tailwind CSS. Esta aplicación presenta los servicios de la empresa, incluyendo soluciones de automatización, chatbots y análisis de datos.
 
-Landing page profesional para servicios de automatización comercial, desarrollada con React + Tailwind CSS.
+## Tecnologías Utilizadas
 
-## 📋 Características
+- **React**: Biblioteca para construir interfaces de usuario.
+- **Vite**: Herramienta de desarrollo rápida para proyectos web.
+- **Tailwind CSS**: Framework de CSS utilitario para estilos rápidos y responsivos.
+- **Lucide React**: Biblioteca de iconos para React.
 
-✅ Diseño moderno y profesional
+## Instalación
 
-✅ Totalmente responsive (móvil, tablet, desktop)
+1. Clona el repositorio:
+   ```bash
+   git clone <url-del-repositorio>
+   cd grupo-lidia-web
+   ```
 
-✅ Animaciones suaves al scroll
+2. Instala las dependencias:
+   ```bash
+   npm install
+   ```
 
-✅ Integración con WhatsApp
+## Uso
 
-✅ Formulario de contacto funcional
-
-✅ Optimizado para conversión
-
-✅ SEO friendly
-
-✅ Listo para deploy en cloud
-
-## 🎨 Paleta de Colores
-
-* **Violeta** : `#6B46C1` - Color principal
-* **Marrón** : `#8B5E3C` - Color secundario
-* **Naranja** : `#F59E0B` - CTAs y acentos
-* **Blanco** : `#FFFFFF` - Fondo
-
-## 📦 Instalación
-
-### 1. Clonar o crear el proyecto
-
-```bash
-# Si es nuevo proyecto
-npm create vite@latest grupo-lidia-web -- --template react
-cd grupo-lidia-web
-```
-
-### 2. Instalar dependencias
-
-```bash
-npm install
-```
-
-### 3. Configurar antes de ejecutar
-
-⚠️  **IMPORTANTE** : Edita `src/App.jsx` línea 179 y cambia el número de WhatsApp:
-
-```javascript
-const whatsappNumber = "5493512345678"; // 👈 TU NÚMERO AQUÍ
-```
-
-Formato: `código_país + código_área + número` (sin espacios ni guiones)
-
-Ejemplo Argentina: `5493512345678`
-
-### 4. Ejecutar en desarrollo
+Para ejecutar la aplicación en modo desarrollo:
 
 ```bash
 npm run dev
 ```
 
-Abre [http://localhost:5173](http://localhost:5173/) en tu navegador.
+Esto iniciará el servidor de desarrollo en `http://localhost:5173`.
 
-## 🚀 Deploy en Cloud
+## Construcción
 
-### Vercel (Recomendado)
+Para construir la aplicación para producción:
 
-1. Sube tu código a GitHub
-2. Ve a [vercel.com](https://vercel.com/)
-3. Click en "New Project"
-4. Importa tu repositorio
-5. Vercel detectará automáticamente Vite
-6. Click en "Deploy" 🎉
-
-### Netlify
-
-1. Sube tu código a GitHub
-2. Ve a [netlify.com](https://netlify.com/)
-3. Click en "Add new site" → "Import an existing project"
-4. Conecta con GitHub
-5. Configuración:
-   * Build command: `npm run build`
-   * Publish directory: `dist`
-6. Click en "Deploy" 🎉
-
-### Cloudflare Pages
-
-1. Sube tu código a GitHub
-2. Ve a [pages.cloudflare.com](https://pages.cloudflare.com/)
-3. Click en "Create a project"
-4. Conecta con GitHub
-5. Configuración:
-   * Build command: `npm run build`
-   * Build output directory: `dist`
-6. Click en "Save and Deploy" 🎉
-
-## 📝 Personalización
-
-### Cambiar número de WhatsApp
-
-Archivo: `src/App.jsx` línea 179
-
-### Cambiar email de contacto
-
-Archivo: `src/App.jsx` línea 548
-
-### Modificar servicios
-
-Archivo: `src/App.jsx` líneas 64-97
-
-### Modificar paquetes/precios
-
-Archivo: `src/App.jsx` líneas 99-146
-
-### Cambiar enlaces de redes sociales
-
-Archivo: `src/App.jsx` líneas 580-595
-
-### Modificar colores
-
-Archivo: `tailwind.config.js`
-
-## 📂 Estructura del Proyecto
-
-```
-grupo-lidia-web/
-├── public/
-├── src/
-│   ├── App.jsx          # Componente principal
-│   ├── main.jsx         # Punto de entrada
-│   └── index.css        # Estilos globales
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── vite.config.js
-└── README.md
+```bash
+npm run build
 ```
 
-## 🛠️ Tecnologías
+Los archivos construidos se encontrarán en la carpeta `dist`.
 
-* **React 18** - Framework principal
-* **Vite** - Build tool y dev server
-* **Tailwind CSS** - Estilos
-* **Lucide React** - Iconos
-* **WhatsApp API** - Integración de contacto
+## Vista Previa
 
-## 📱 Secciones
+Para previsualizar la aplicación construida:
 
-1. **Header** - Navegación sticky
-2. **Hero** - Presentación principal con CTAs
-3. **Servicios** - 6 servicios principales
-4. **Paquetes** - 3 planes de precios
-5. **Casos de éxito** - Testimonios y resultados
-6. **Contacto** - Formulario + WhatsApp directo
-7. **Footer** - Redes sociales y copyright
+```bash
+npm run preview
+```
 
-## 🎯 SEO
+## Estructura del Proyecto
 
-El proyecto incluye:
+```
+src/
+├── App.jsx          # Componente principal de la aplicación
+├── main.jsx         # Punto de entrada de React
+├── App.css          # Estilos globales
+├── index.css        # Estilos base con Tailwind
+└── assets/          # Recursos estáticos
 
-* Meta tags optimizados
-* Descripción y keywords
-* Estructura semántica HTML5
-* URLs limpias
-* Responsive design
+public/              # Archivos públicos
+vite.config.js       # Configuración de Vite
+tailwind.config.js   # Configuración de Tailwind CSS
+postcss.config.js    # Configuración de PostCSS
+eslint.config.js     # Configuración de ESLint
+```
 
-## 📞 Soporte
+## Scripts Disponibles
 
-Para consultas sobre el proyecto:
+- `npm run dev`: Inicia el servidor de desarrollo.
+- `npm run build`: Construye la aplicación para producción.
+- `npm run preview`: Previsualiza la aplicación construida.
 
-* Email: info@grupolidia.com
-* WhatsApp: +54 9 351 234-5678
+## Contribución
 
-## 📄 Licencia
+Si deseas contribuir a este proyecto, por favor sigue estos pasos:
 
-© 2024 Grupo Lidia. Todos los derechos reservados.
+1. Haz un fork del repositorio.
+2. Crea una rama para tu feature (`git checkout -b feature/nueva-funcionalidad`).
+3. Haz commit de tus cambios (`git commit -am 'Agrega nueva funcionalidad'`).
+4. Haz push a la rama (`git push origin feature/nueva-funcionalidad`).
+5. Abre un Pull Request.
+
+## Licencia
+
+Este proyecto es privado y propiedad de Grupo Lidia.
